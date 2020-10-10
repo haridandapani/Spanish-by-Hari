@@ -64,6 +64,7 @@ public class App {
     Spark.get("/", new HomeGUI(), freeMarker);
     Spark.post("/create", new TranslateGUI(), freeMarker);
     Spark.post("/live", new LiveTranslateGUI());
+    Spark.get("*", new HomeGUI(), freeMarker);
 
   }
 

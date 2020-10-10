@@ -17,12 +17,21 @@ public class TranslateGUI implements TemplateViewRoute {
   public ModelAndView handle(Request request, Response response) throws Exception {
     QueryParamsMap vars = request.queryMap();
     String texter = vars.value("texter");
-    Map<String, Object> variables = ImmutableMap.<String, Object>builder()
-        .put("value", makeOutputString(texter)).build();
+    String es = vars.value("clicker");
+    String output = "";
+    if (es.equals("Spanish Text")) {
+      output = makeOutputStringEs(texter);
+      request.session().attribute("spanish", true);
+    } else {
+      output = makeOutputStringEn(texter);
+      request.session().attribute("spanish", false);
+    }
+    Map<String, Object> variables = ImmutableMap.<String, Object>builder().put("value", output)
+        .build();
     return new ModelAndView(variables, "translate.ftl");
   }
 
-  private String makeOutputString(String texter) {
+  private String makeOutputStringEs(String texter) {
     List<String> finalOutput = new ArrayList<>();
     String[] enterSplit = texter.split("\n");
     for (String stringer : enterSplit) {
@@ -39,6 +48,34 @@ public class TranslateGUI implements TemplateViewRoute {
         temper.append("<a href = \"https://www.spanishdict.com/translate/");
         temper.append(s);
         temper.append("?langFrom=es\" target = \"blank\" onmouseover=\"getTranslation(this);\">");
+        temper.append(s);
+        temper.append("</a>");
+        outputter.add(temper.toString());
+      }
+
+      finalOutput.add(listToString(outputter));
+      finalOutput.add("<br>");
+    }
+    return listToString(finalOutput);
+  }
+
+  private String makeOutputStringEn(String texter) {
+    List<String> finalOutput = new ArrayList<>();
+    String[] enterSplit = texter.split("\n");
+    for (String stringer : enterSplit) {
+
+      while (stringer.indexOf("  ") != -1) {
+        stringer = stringer.replaceAll("  ", " ");
+      }
+
+      String[] spaceSplit = stringer.split(" ");
+      List<String> outputter = new ArrayList<>();
+
+      for (String s : spaceSplit) {
+        StringBuilder temper = new StringBuilder();
+        temper.append("<a href = \"https://www.spanishdict.com/translate/");
+        temper.append(s);
+        temper.append("?langFrom=en\" target = \"blank\" onmouseover=\"getTranslation(this);\">");
         temper.append(s);
         temper.append("</a>");
         outputter.add(temper.toString());
