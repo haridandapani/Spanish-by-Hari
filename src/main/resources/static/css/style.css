@@ -1,0 +1,177 @@
+html{
+  background-color: lightgrey;
+}
+.column {
+  text-align: left;
+  margin:0 auto;
+  float: left;
+  padding: 10px;
+}
+
+.left{
+  width: 10%;
+}
+.right {
+  width: 25%;
+}
+.third {
+  padding: 1%;
+  width: 33%;
+}
+.quarter{
+  width: 25%;
+  text-align: center;
+}
+.half{
+  width: 100%;
+  text-align: center;
+}
+.middle {
+  width: 60%;
+  font-size: 24px;
+}
+
+.chome {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: blue;
+  background: yellowgreen;
+}
+
+::selection {
+  color: blue;
+  background: yellowgreen;
+}
+
+img.resize {
+  max-width:50%;
+  max-height:50%;
+}
+
+input[type=number] {
+  width: 8%;
+  border-radius: 14px;
+  padding: 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+div.central{
+  text-align: center;
+  width:30%;
+  margin:0 auto;
+}
+
+div.left{
+  text-align: left;
+}
+
+h2 {
+  color: black;
+}
+
+h4{
+  font-size: 18px;
+  font: Arial, sans-serif;
+  font-weight: normal;  
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+img.home {
+  max-width:60%;
+  max-height:60%;
+}
+
+p.question{
+  font-size: 24px;
+  font: Arial, sans-serif;
+  font-weight: normal;
+}
+
+
+
+textarea {
+  width: 600px;
+  height: 360px;
+}
+
+.button {
+	box-shadow:inset 0px 1px 0px 0px #3d75db;
+	background-color:#3d75db;
+	border-radius:6px;
+	border:1px solid #3d75db;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d75db;
+}
+.button:hover {
+	background-color:#3d75db;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  width: 20px;
+  height: 20px;
+  /* background-color only for content */
+  background-clip: content-box;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: #3d75db;
+}
+
+ /* Style the header */
+ .header {
+  padding: 10px;
+  background: #3d75db;
+  color: #f1f1f1;
+  border-radius: 25px;
+  opacity: 0.9;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+} 
