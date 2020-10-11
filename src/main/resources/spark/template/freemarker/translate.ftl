@@ -1,10 +1,10 @@
 <html>
 <link rel="stylesheet" href="/css/style.css">
-  <title>Spanish by Hari</title>
+  <title>Help me learn Spanish</title>
   <div class="header" id="myHeader">
     <h2>
     <div class = "quarter">
-    <a href = "/">Home</a>
+    <u><a href = "/">Home</a></u>
     </div>
     <div id = "headie" class = "half">
       Live Translator
@@ -15,9 +15,9 @@
   <br>
   <div class = "column left">
   <h4>
-  s to save
+  s to save word in Live Translator
   <br><hr>
-  e to download
+  e to download list of Saved Words
   </h4>
   </div>
   <div class = "column middle">

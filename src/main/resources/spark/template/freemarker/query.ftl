@@ -1,8 +1,8 @@
 <html>
 <link rel="stylesheet" href="/css/style.css">
-  <title>Spanish by Hari</title>
+  <title>Help me learn Spanish</title>
   <div class = "chome">
-    <h2>Spanish by Hari</h2>
+    <h2>Help me learn Spanish</h2>
   </div>
     <div class = "column third">
     <h4>
