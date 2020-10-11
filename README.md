@@ -1,6 +1,6 @@
-# Spanish-by-Hari
+# Help Me Read Spanish
 Application to live-translate Spanish readings while also helping you learn Spanish
-[](http://helpmelearnspanish.herokuapp.com/)
+[Link to working Project](http://helpmelearnspanish.herokuapp.com/)
 
 ## How to run
 Run the App.Java file with whatever program you usually use to open Java files. For example, I use Eclipse. Then navigate to localhost:4567 and follow the instructions on the page.
