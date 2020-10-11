@@ -1,10 +1,10 @@
 # Help Me Read Spanish
 Application to live-translate Spanish readings while also helping you learn Spanish
-[Link to working Project](http://helpmelearnspanish.herokuapp.com/)
+[Link to working Project](http://helpmelearnspanish.herokuapp.com/).
 To copy and paste the link, it is here: http://helpmelearnspanish.herokuapp.com/
 
 ## How to run
-Compile and run the App.java file with whatever program you usually use to open Java files. To do this, you might have to import the pom.xml file into your Java editors and ensure that all of the dependecies are functioning on your machine. I use Eclipse as my IDE and it has all of this functionality included. Then navigate to localhost:4567 and follow the instructions on the page.
+Compile and run the App.java file with whatever program you usually use to open Java files. To do this, you might have to import the pom.xml file into your Java editors and ensure that all of the dependecies are functioning on your machine. I use Eclipse as my IDE and it has all of this functionality included. Then navigate to localhost:4567 in your web browser and follow the instructions on the page.
 
 ## Inspiration
 Whenever I am doing my Spanish readings, I often find myself getting lost. I probably understand around 19 words out of every 20, but, for me, it is important that I understand all 20. That's how I will truly understand the text. Furthermore, it was always really annoying to have to look up each individual word, and, oftentimes, I would just not look them up because I was too lazy. To combat this problem, I built this webapp to be able to better understand my Spanish homework and to allow other to understand theirs. 
